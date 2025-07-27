@@ -1,0 +1,19 @@
+{
+  "dependencies": [
+    "."
+  ],
+  "graphs": {
+    "llm_agent": "./graph.py:graph",
+    "tool_graph": "./tool_graph.py:graph"
+  },
+  "env": ".env",
+  "version": "0.0.1",
+  "title": "Agent Tool Generation with Human-in-the-Loop",
+  "description": "LangGraph configuration for the agent system with tool generation and human validation",
+  "langgraph": {
+    "checkpointer": "memory",
+    "memory_config": {
+      "type": "inmem"
+    }
+  }
+}
